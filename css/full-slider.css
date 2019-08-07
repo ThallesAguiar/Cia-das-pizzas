@@ -1,0 +1,74 @@
+/*!
+ * Start Bootstrap - Full Slider (https://startbootstrap.com/template-overviews/full-slider)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full-slider/blob/master/LICENSE)
+ */
+
+@font-face{ /*Chamar nova fonte de texto que eu tenha em meu computador. E para achar fontes nova na WEB, acesse google.com/fonts*/
+
+    font-family: 'FonteLogo' ;/*Nome para a FONTE e, tem que ser entre aspas simples ''*/
+    src: url(../_fonts/bubblegum-sans-regular.otf);
+}
+@font-face{
+    font-family:'glass';
+    src:url(../_fonts/Arual.ttf);
+}
+
+body{
+	background-image:url(../imagens/bg.jpg);
+}
+
+.carousel-item {
+	width: 100%;
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+.estilo-ul{
+	width: 100%;
+ 	height: auto;
+    display: block; /*Fará com que os meus blocos flutuem*/
+    font-family: 'FonteLogo', sans-serif;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+
+.estilo-ul ul{
+    list-style: none; /*Transforma as letras em MAIUSCULAS*/
+}
+
+.estilo-ul li{
+    display: inline-block;/*Fará com que um bloco seja exibido numa mesma linha */
+    padding:10px; /*Cria um espaço DENTRO do objeto*/
+	padding:0 15px;
+}
+.estilo-ul a{
+	text-align: right;
+	text-decoration: none;
+	color: gold;
+  padding:  10px;
+	font-size: 21pt;
+}
+.estilo-ul a:hover{
+	background-color: #aa0f0f;
+	color: yellow;
+  padding: 10px;
+	border-radius: 5px;
+
+}
+
+.caixa-imagem-pizzas{
+  background-color: rgba(255,255,255,.2);
+}
+
+footer{
+  color: yellow;
+}
+

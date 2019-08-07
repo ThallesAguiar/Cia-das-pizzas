@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Quicksand');
+
+@font-face{ /*Chamar nova fonte de texto que eu tenha em meu computador. E para achar fontes nova na WEB, acesse google.com/fonts*/
+
+    font-family: 'FonteLogo' ;/*Nome para a FONTE e, tem que ser entre aspas simples ''*/
+    src: url(../_fonts/bubblegum-sans-regular.otf);
+}
+@font-face{
+    font-family:'glass';
+    src:url(../_fonts/Arual.ttf);
+}
+
+
+
+*{ /*resetando*/
+	 margin:0;
+	 padding:0;
+ }
+body{
+	 background-image: url(../imagens/bg.jpg);
+     background-size:contain;
+}
+main{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+/*CABEÇALHO*/
+header{
+	width:100%;
+	min-height:85px;
+	background-color: #aa0f0f;
+}
+.margin-meio{
+	width:25%;
+	margin: 0 auto;
+}
+
+header img{
+	 width:275px;
+	 height:50px;
+ }
+ header img#telefone-numero{
+	 width:100px;
+	 height:21px;
+	 margin-left: 10px;
+ }
+
+
+
+
+/*MENU NAVEGAÇÃO*/
+ nav#menu{
+ 	width: 100%;
+ 	height: auto;
+    display: block; /*Fará com que os meus blocos flutuem*/
+    font-family: 'FonteLogo', sans-serif;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+	background-color: yellow;
+}
+
+nav#menu ul{
+    list-style: none; /*Transforma as letras em MAIUSCULAS*/
+}
+
+nav#menu li{
+    display: inline-block;/*Fará com que um bloco seja exibido numa mesma linha */
+    padding:10px; /*Cria um espaço DENTRO do objeto*/
+	padding:0 15px;
+}
+nav#menu a{
+	text-align: right;
+	text-decoration: none;
+	color: #aa0f0f;
+	font-size: 21pt;
+}
+nav#menu a:hover{
+	background-color: #aa0f0f;
+	color: yellow;
+	border-radius: 5px;
+
+}
+ 
+ 
+
+ #background-inicio{
+	width:100%;
+	height: 100vh;
+	background-image: url(../imagens/fundo1.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+ }
+ #background-inicio button{
+ 	text-align: center;
+ 	width: auto;
+    height: auto;
+ 	background: linear-gradient(to top,#aa0f0f , #800101);
+ 	color: white;
+ 	border-radius: 5px;
+ 	border: 1px solid #aa0f0f;
+ 	box-shadow: 1px 1px 1px #000;
+ 	margin: 10px 10px;
+ 	padding: 5px;
+ 	text-shadow: 1px 1px 1px black;
+ }
+ #background-inicio button:hover{
+ 	background: linear-gradient(to top , #800101,#aa0f0f);
+ 	transition: all 2s;
+ }
+ 
+ section.promocao{
+ 	width: 60%;
+ 	min-width: 270px;
+ 	margin: 0 auto;
+ 	padding: 5px;
+ }
+ section.promocao img{
+ 	width: 95%;
+ 	box-shadow: 0px 0px 14px #000;
+    margin: 5px;
+    border-radius: 10px;
+ }
+
+
+ section.tamanho-pizza{
+ 	height: auto;
+ 	background-image: url(../imagens/fundo.jpg);
+ }
+ div.background-container{
+ 	margin: 0 auto;
+ 	text-align: center;
+ 	overflow: hidden;
+ }
+ div.imagem-tamanho{
+ 	float: left;
+ 	padding-left: 35px;
+ }
+ 
+ div.background-container img#media{
+ 	width: 125px;
+ 	margin: 40px auto 0;
+ }
+div.background-container img#grande{
+ 	width: 155px;
+ 	margin: 40px auto 0;
+ }
+ div.background-container img#gigante{
+ 	width: 225px;
+ 	margin: 40px auto 0;
+ }
+ mark{
+ 	color: red;
+ 	background-color: transparent;
+ }
+ div.background-container p{
+ 	font-family: FonteLogo;
+ 	color: yellow;
+ }
+
+
+footer{
+	width: 100%;
+	height: auto;
+	background-color: #aa0f0f;
+	margin-top:  10px;
+}
+/*MAPA*/
+iframe#mapa{
+	width: 100%;
+    height: auto;
+}
+footer p{
+	text-align: center;
+    color: yellow;
+}
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  /*adaptando o menu para diminuir a tela */
+ 
+
+ @media(max-width: 960px ){ 
+
+ 	#background-inicio{
+	width:100%;
+	height: 360px;
+	background-image: url(../imagens/fundo1.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: scroll;
+	margin-bottom: 0px;
+ }
+
+
+	div.background-container{
+ 	margin: 0 auto;
+ 	text-align: center;
+ 	overflow: none;
+ }
+
+
+ }
+  @media(max-width: 600px ){ 
+
+ 	#background-inicio{
+	width:100%;
+	height: 221px;
+	background-image: url(../imagens/fundo1.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+ }
+}
+
+ @media(max-width: 300px ){ 
+
+ 	#background-inicio{
+	width:100%;
+	height: 170px;
+	background-image: url(../imagens/fundo1.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+ }
+}
+	 
+	 

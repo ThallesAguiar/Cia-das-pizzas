@@ -1,0 +1,12 @@
+<div class="sub-tamanhos" id="grande">
+		<div><img class="formas_grande"  src="forma_pizza.png">
+		<p id="pizza_grande" >Pizza Grande.</p>
+		<p id="valor45">R$45,00</p>
+		</div></div>
+		
+		<div class="sub-tamanhos" id="gigante">
+		<div><img class="formas_gigante"   src="forma_pizza.png">
+		<p id="pizza_gigante">Pizza Gigante.</p>
+		<p id="valor65">R$65,00</p>
+		</div>
+		</div>
